@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 import useAuthStore from './useAuthStore';
 
-const API_URL = 'http://localhost:5000/api/progress';
+const API_URL = import.meta.env.PROD ? '/api/progress' : 'http://localhost:5000/api/progress';
 
 const useProgressStore = create((set, get) => ({
   completedConcepts: [],

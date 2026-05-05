@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 
-const API_URL = 'http://localhost:5000/api/auth';
+const API_URL = import.meta.env.PROD ? '/api/auth' : 'http://localhost:5000/api/auth';
 
 const useAuthStore = create((set, get) => ({
   user: null,
