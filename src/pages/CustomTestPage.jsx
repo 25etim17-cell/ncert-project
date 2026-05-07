@@ -6,7 +6,7 @@ import { Play, Settings2 } from 'lucide-react';
 
 const CustomTestPage = () => {
   const [classes, setClasses] = useState(['9', '10']);
-  const [subjects, setSubjects] = useState(['Physics', 'Chemistry', 'Mathematics']);
+  const [subjects, setSubjects] = useState(['Physics', 'Chemistry', 'Biology']);
   const [questionTypes, setQuestionTypes] = useState(['mcq', 'match']);
   const [numQuestions, setNumQuestions] = useState(10);
 
@@ -68,7 +68,7 @@ const CustomTestPage = () => {
         <div className="mb-8">
           <h3 className="font-bold text-gray-700 mb-4 uppercase tracking-wider text-sm">Subjects</h3>
           <div className="flex flex-wrap gap-4">
-            {['Physics', 'Chemistry', 'Mathematics'].map(sub => (
+            {['Physics', 'Chemistry', 'Biology'].map(sub => (
               <button
                 key={sub}
                 onClick={() => toggleArrayItem(subjects, setSubjects, sub)}
