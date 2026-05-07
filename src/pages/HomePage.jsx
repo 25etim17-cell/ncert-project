@@ -97,9 +97,7 @@ const HomePage = () => {
                 >
                   Start Learning Free <ArrowRight className="w-4 h-4" />
                 </Link>
-                <button className="px-8 py-4 border border-white/20 text-white/90 font-semibold rounded-2xl flex items-center gap-2 hover:bg-white/10 transition-all duration-200 text-sm backdrop-blur">
-                  <Play className="w-4 h-4" /> Watch Demo
-                </button>
+               
               </div>
 
               {/* Trust Badges */}
